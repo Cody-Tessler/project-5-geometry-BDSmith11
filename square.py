@@ -10,7 +10,7 @@ from rectangle import Rectangle
 class Square(Rectangle):
 
     def __init__(self, a):
-        self.a = a
+        super().__init__(a, a)
 
     def __str__(self):
         return f"Square, a={self.a:0.2f}"

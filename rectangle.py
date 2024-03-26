@@ -7,11 +7,11 @@ class Rectangle(Shape):
         self.a = a
         self.b = b
 
-    def get_area(self, a, b):
-        return a*b
+    def get_area(self):
+        return self.a*self.b
 
-    def get_perimeter(self, a, b):
-        return 2*(a + b)
+    def get_perimeter(self):
+        return 2*(self.a + self.b)
 
     def __str__(self):
         return f"Rectangle, a={self.a:0.2f}, b={self.b:0.2f}"
