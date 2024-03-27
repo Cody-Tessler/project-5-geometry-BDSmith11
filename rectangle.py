@@ -8,10 +8,12 @@ class Rectangle(Shape):
         self.b = b
 
     def get_area(self):
-        return self.a*self.b
+        x = self.a*self.b
+        return f'{x:0.2f}'
 
     def get_perimeter(self):
-        return 2*(self.a + self.b)
+        x = 2*(self.a + self.b)
+        return f'{x:0.2f}'
 
     def __str__(self):
         return f"Rectangle, a={self.a:0.2f}, b={self.b:0.2f}"
