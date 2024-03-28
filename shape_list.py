@@ -41,9 +41,9 @@ class ShapeList:
         :return: Shape -> object with largest perimeter
         """
         largest_shape = self.shapes[0]
-        largest_perimeter = 0
-        for shape in self.shapes:
-            perimeter = Shape.get_perimeter(self)
+        largest_perimeter = self.shapes[0].get_perimeter()
+        for shape in self.shapes[1:]:
+            perimeter = self.shapes.get_perimeter()
             if perimeter > largest_perimeter:
                 largest_shape = shape
                 largest_perimeter = perimeter
@@ -56,9 +56,9 @@ class ShapeList:
         :return: Shape -> object with largest area
         """
         largest_shape = self.shapes[0]
-        largest_area = 0
-        for shape in self.shapes:
-            area = Shape.get_area(self)
+        largest_area = self.shapes[0].get_area()
+        for shape in self.shapes[1:]:
+            area = self.shapes.get_area()
             if area > largest_area:
                 largest_shape = shape
                 largest_area = area
