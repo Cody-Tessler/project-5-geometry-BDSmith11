@@ -4,6 +4,7 @@ import math
 class Pentagon(Shape):
 
     def __init__(self, a):
+        self.check_if_args_not_below_zero(a)
         self.a = a
 
     def get_area(self):

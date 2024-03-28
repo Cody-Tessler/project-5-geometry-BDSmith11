@@ -4,6 +4,7 @@ import math
 class Circle(Shape):
 
     def __init__(self, r):
+        self.check_if_args_not_below_zero(r)
         self.r = r
 
     def get_area(self):

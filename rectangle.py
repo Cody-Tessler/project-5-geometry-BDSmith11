@@ -4,6 +4,7 @@ import math
 class Rectangle(Shape):
 
     def __init__(self, a, b):
+        self.check_if_args_not_below_zero(a, b)
         self.a = a
         self.b = b
 
