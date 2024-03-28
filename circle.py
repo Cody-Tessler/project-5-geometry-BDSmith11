@@ -8,11 +8,11 @@ class Circle(Shape):
 
     def get_area(self):
         x = math.pi*self.r**2
-        return f'{x:0.2f}'
+        return x
 
     def get_perimeter(self):
         x = 2*math.pi*self.r
-        return f'{x:0.2f}'
+        return x
 
     def __str__(self):
         return f"Circle, r={self.r:0.2f}"

@@ -8,11 +8,11 @@ class Pentagon(Shape):
 
     def get_area(self):
         x = 1/4*math.sqrt(5*(5+2*math.sqrt(5)))*self.a**2
-        return f'{x:0.2f}'
+        return x
 
     def get_perimeter(self):
         x = 5*self.a
-        return f'{x:0.2f}'
+        return x
 
     def __str__(self):
         return f"Pentagon, a={self.a:0.2f}"

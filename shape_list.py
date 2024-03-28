@@ -48,7 +48,7 @@ class ShapeList:
                 largest_shape = shape
                 largest_perimeter = perimeter
     
-        return f"Shape -> {largest_shape}"
+        return largest_shape
 
     def get_largest_shape_by_area(self):
         """
@@ -63,5 +63,5 @@ class ShapeList:
                 largest_shape = shape
                 largest_area = area
 
-        return f"Shape -> {largest_shape}"
+        return largest_shape
         
