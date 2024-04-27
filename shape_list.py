@@ -40,12 +40,28 @@ class ShapeList:
         Returns shape with largest perimeter.
         :return: Shape -> object with largest perimeter
         """
-        return "TODO: return the shape with the largest perimeter"
+        largest_shape = self.shapes[0]
+        largest_perimeter = self.shapes[0].get_perimeter()
+        for shape in self.shapes[1:]:
+            perimeter = self.shapes.get_perimeter()
+            if perimeter > largest_perimeter:
+                largest_shape = shape
+                largest_perimeter = perimeter
+    
+        return largest_shape
 
     def get_largest_shape_by_area(self):
         """
         Returns shape with largest area.
         :return: Shape -> object with largest area
         """
-        return "TODO: return the shape with the largest area"
+        largest_shape = self.shapes[0]
+        largest_area = self.shapes[0].get_area()
+        for shape in self.shapes[1:]:
+            area = self.shapes.get_area()
+            if area > largest_area:
+                largest_shape = shape
+                largest_area = area
+
+        return largest_shape
         
